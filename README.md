@@ -28,7 +28,7 @@ one honesty note: this space moves weekly. exact install strings are given where
 
 | # | category | what it covers |
 |---|---|---|
-| 01 | [core dev — the universal core](servers/01-core-dev.md) | github, context7, playwright, filesystem, brave search |
+| 01 | [core dev — the universal core](servers/01-core-dev.md) | github, context7, playwright, filesystem, brave search, firecrawl |
 | 02 | [databases & backend](servers/02-data-backend.md) | postgres, supabase, neon, sqlite, redis |
 | 03 | [ops, infra & cloud](servers/03-ops-infra.md) | cloudflare, vercel, aws, docker hub, sentry, kubernetes |
 | 04 | [corporate / team & productivity](servers/04-corporate-productivity.md) | slack, linear, notion, jira/confluence, gdrive, gmail, calendar, asana, airtable |
@@ -92,6 +92,7 @@ one honesty note: this space moves weekly. exact install strings are given where
 | 48 | youtube | creator | community | local | no |
 | 49 | sequential thinking | reasoning | official | local | no |
 | 50 | memory | reasoning | official | local | no |
+| 51 | firecrawl | core-dev | official | hosted / local | no |
 
 > the **money or irreversible?** column flags servers that — per the source article's warnings — can move real money, handle banking/financial data, place real trades, execute irreversible on-chain transactions, or write to production infrastructure/databases. it is a prompt to slow down and keep a human in the loop, not a claim that the server is unsafe. read each server's gotcha for the specifics.
 

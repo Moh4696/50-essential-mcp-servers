@@ -44,3 +44,12 @@ fast web search inside the agent so it can ground answers without you tab-switch
 - **install:** `claude mcp add brave-search npx @brave/brave-search-mcp-server` (brave api key in env)
 - **link:** https://github.com/brave/brave-search-mcp-server
 - **gotcha:** needs a free key. keep it in user-scope settings, never commit it. note: the old `@modelcontextprotocol/server-brave-search` reference server was archived — brave maintains its own now.
+
+## 51. firecrawl
+
+reads the page behind a search result. scrape any url into clean markdown or structured json (js-rendered pages included), search the web (optionally with page content), and with a key crawl a site or map its urls. official, from the firecrawl team.
+
+- **install:** `claude mcp add --transport http firecrawl https://mcp.firecrawl.dev/v2/mcp` (no account needed to start)
+- **codex:** `codex mcp add firecrawl --url https://mcp.firecrawl.dev/v2/mcp`
+- **link:** https://github.com/firecrawl/firecrawl-mcp-server
+- **gotcha:** the keyless endpoint is rate-limited and only exposes scrape, search and parse. crawl, map and agent need a firecrawl api key (an `Authorization: Bearer` header on the same url). crawls spend credits per page, so set a limit.
